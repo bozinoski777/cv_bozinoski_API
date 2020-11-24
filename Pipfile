@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pip = "==20.2.4" 
 appdirs = "==1.4.3"
 apturl = "==0.5.0"
 asgiref = "==3.3.1"
