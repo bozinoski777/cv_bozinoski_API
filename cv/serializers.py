@@ -34,4 +34,4 @@ class SkillsSerializer(serializers.ModelSerializer):
 class CodingProjectsSerializer(serializers.ModelSerializer):
   class Meta:
     model = CodingProjects
-    fields = ('id', 'name', 'email', 'mobile', 'birthday', 'citizenship', 'github', 'linkedin', 'introduction')
+    fields = ('id', 'title', 'tagline', 'description', 'live_demo', 'repository')
