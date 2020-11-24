@@ -1,6 +1,7 @@
 from django.db import models
 
 class Education(models.Model):
+  degree = models.CharField(max_length=50)
   timespan = models.CharField(max_length=50)
   institution = models.CharField(max_length=50)
   city = models.CharField(max_length=50)
@@ -39,6 +40,7 @@ class CodingProjects(models.Model):
   repository = models.CharField(max_length=50)
 
 class Contact(models.Model):
+  introduction = models.CharField(max_length=300)
   name = models.CharField(max_length=50)
   email = models.CharField(max_length=50)
   mobile = models.CharField(max_length=50)
@@ -46,5 +48,4 @@ class Contact(models.Model):
   citizenship = models.CharField(max_length=50)
   github = models.CharField(max_length=50)
   linkedin = models.CharField(max_length=50)
-  introduction = models.CharField(max_length=300)
 

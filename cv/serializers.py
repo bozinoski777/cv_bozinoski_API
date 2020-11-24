@@ -4,12 +4,12 @@ from .models import Contact, Education, Languages, Organizations, ProfessionalEx
 class ContactSerializer(serializers.ModelSerializer):
   class Meta:
     model = Contact
-    fields = ('id', 'name', 'email', 'mobile', 'birthday', 'citizenship', 'github', 'linkedin', 'introduction')
+    fields = ('id', 'introduction', 'name', 'email', 'mobile', 'birthday', 'citizenship', 'github', 'linkedin')
 
 class EducationSerializer(serializers.ModelSerializer):
   class Meta:
     model = Education
-    fields = ('id', 'timespan', 'institution', 'city', 'country')
+    fields = ('id', 'degree', 'timespan', 'institution', 'city', 'country')
 
 class LanguagesSerializer(serializers.ModelSerializer):
   class Meta:
