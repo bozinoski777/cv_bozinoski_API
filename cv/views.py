@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from rest_framework import viewsets, permissions
-from .models import Cv, Education, Languages, Organizations, ProfessionalExperience, Skills, CodingProjects
-from .serializers import CvSerializer, EducationSerializer, LanguagesSerializer, OrganizationsSerializer, ProfessionalExperienceSerializer, SkillsSerializer, CodingProjectsSerializer
+from .models import Contact, Education, Languages, Organizations, ProfessionalExperience, Skills, CodingProjects
+from .serializers import ContactSerializer, EducationSerializer, LanguagesSerializer, OrganizationsSerializer, ProfessionalExperienceSerializer, SkillsSerializer, CodingProjectsSerializer
 
-class CvView(viewsets.ModelViewSet):
-  queryset = Cv.objects.all()
-  serializer_class = CvSerializer
+class ContactView(viewsets.ModelViewSet):
+  queryset = Contact.objects.all()
+  serializer_class = ContactSerializer
 
 class EducationView(viewsets.ModelViewSet):
   queryset = Education.objects.all()

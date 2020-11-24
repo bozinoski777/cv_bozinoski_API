@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from .models import Cv, Education, Languages, Organizations, ProfessionalExperience, Skills, CodingProjects
+from .models import Contact, Education, Languages, Organizations, ProfessionalExperience, Skills, CodingProjects
 
-class CvSerializer(serializers.ModelSerializer):
+class ContactSerializer(serializers.ModelSerializer):
   class Meta:
-    model = Cv
+    model = Contact
     fields = ('id', 'name', 'email', 'mobile', 'birthday', 'citizenship', 'github', 'linkedin', 'introduction')
 
 class EducationSerializer(serializers.ModelSerializer):

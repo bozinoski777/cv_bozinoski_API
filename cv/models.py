@@ -38,7 +38,7 @@ class CodingProjects(models.Model):
   live_demo = models.CharField(max_length=50)
   repository = models.CharField(max_length=50)
 
-class Cv(models.Model):
+class Contact(models.Model):
   name = models.CharField(max_length=50)
   email = models.CharField(max_length=50)
   mobile = models.CharField(max_length=50)
