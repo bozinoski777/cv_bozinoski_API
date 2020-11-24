@@ -46,5 +46,5 @@ class Contact(models.Model):
   citizenship = models.CharField(max_length=50)
   github = models.CharField(max_length=50)
   linkedin = models.CharField(max_length=50)
-  introduction = models.CharField(max_length=1000)
+  introduction = models.CharField(max_length=300)
 
