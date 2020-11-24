@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 from .models import Cv, Education, Languages, Organizations, ProfessionalExperience, Skills, CodingProjects
 from .serializers import CvSerializer, EducationSerializer, LanguagesSerializer, OrganizationsSerializer, ProfessionalExperienceSerializer, SkillsSerializer, CodingProjectsSerializer
 
