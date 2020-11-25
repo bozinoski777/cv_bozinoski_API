@@ -14,7 +14,7 @@ Info:
   - 3.9.3
 
 * Gunicorn version:
- - 20.0.4
+  - 20.0.4
 
 * Deployment:
   - Heroku
